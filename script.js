@@ -55,32 +55,4 @@ function calculateRisk() {
     document.getElementById("rmsLoss").innerText = rmsLoss.toFixed(2);
     document.getElementById("integralRisk").innerText = integralRisk.toFixed(2);
 
-    // Generate the detailed conclusion
-    let conclusionText = `
-        The average loss from risk (mathematical expectation of loss) has ${avgLossChange} significantly 
-        (instead of ${prevAvgLoss} it became ${avgLoss.toFixed(2)}), but at the same time the variance 
-        (the degree of riskiness of the situation, the measure of dispersion) ${varianceChange} 
-        (instead of ${prevVariance} it became ${variance.toFixed(2)}).
-        
-        Accordingly, the standard deviation RMS loss also ${rmsLossChange} 
-        (instead of ${prevRmsLoss} it became ${rmsLoss.toFixed(2)}).
-        
-        The integral risk assessment ${integralRiskChange} 
-        (instead of ${prevIntegralRisk} it became ${integralRisk.toFixed(2)}).
-        
-        As is known, when making a decision, the values of the integral risk assessment should be minimized.
-        
-        Consequently, from all of the above, we can conclude that "${improvement}" is ${appropriateness} 
-        and ${effectiveness} in these conditions.
-        
-        This will ${integralRisk < prevIntegralRisk ? "reduce" : "increase"} the likelihood of personal data theft, 
-        and also significantly ${integralRisk < prevIntegralRisk ? "reduce" : "increase"} 
-        the riskiness of the situation.
-        
-        That is why these events are ${beneficial} for our company.
-    `;
-
-    document.getElementById("conclusion").innerText = conclusionText;
-}
-
 );

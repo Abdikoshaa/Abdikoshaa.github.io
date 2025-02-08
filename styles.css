@@ -1,4 +1,3 @@
-/* 🌟 Modern UI */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
@@ -52,13 +51,3 @@ button {
     margin-top: 20px;
 }
 
-/* 🌙 Dark Mode */
-.dark-mode {
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-}
-
-.dark-mode .container { background: #222; color: white; }
-.dark-mode input, .dark-mode textarea { background: #333; color: white; }
-.dark-mode .output-section { background: #333; }    

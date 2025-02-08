@@ -1,64 +1,55 @@
-/* 🌟 Modern UI */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    transition: background 0.3s, color 0.3s;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-/* 🌟 Container */
-.container {
-    max-width: 800px;
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
     background: white;
-    padding: 25px;
-    margin: 40px auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 🌟 Inputs & Buttons */
-input, textarea {
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 12px;
-    width: 100%;
-    border-radius: 6px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
+label {
+    display: block;
     margin-top: 10px;
-    border-radius: 6px;
     font-weight: bold;
 }
 
-.btn-primary { background: #007bff; color: white; }
-.btn-primary:hover { background: #0056b3; }
-
-.btn-success { background: #28a745; color: white; }
-.btn-success:hover { background: #218838; }
-
-/* 🌟 Output Section */
-.output-section {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* 🌙 Dark Mode */
-.dark-mode {
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+button {
+    background-color: #0073e6;
     color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
 }
 
-.dark-mode .container { background: #222; color: white; }
-.dark-mode input, .dark-mode textarea { background: #333; color: white; }
-.dark-mode .output-section { background: #333; }
+button:hover {
+    background-color: #005bb5;
+}

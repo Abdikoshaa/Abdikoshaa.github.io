@@ -83,4 +83,7 @@ function calculateRisk() {
     document.getElementById("conclusion").innerText = conclusionText;
 }
 
-);
+// 🌙 Toggle Dark Mode
+document.getElementById("themeToggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+});

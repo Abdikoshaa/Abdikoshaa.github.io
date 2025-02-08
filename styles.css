@@ -1,55 +1,64 @@
+/* 🌟 Modern UI */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    transition: background 0.3s, color 0.3s;
 }
 
-header {
-    background-color: #0073e6;
-    color: white;
-    padding: 15px;
-    font-size: 1.5em;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
+/* 🌟 Container */
+.container {
+    max-width: 800px;
     background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+/* 🌟 Inputs & Buttons */
+input, textarea {
+    background: #f9f9f9;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
 }
 
 button {
-    background-color: #0073e6;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-button:hover {
-    background-color: #005bb5;
+.btn-primary { background: #007bff; color: white; }
+.btn-primary:hover { background: #0056b3; }
+
+.btn-success { background: #28a745; color: white; }
+.btn-success:hover { background: #218838; }
+
+/* 🌟 Output Section */
+.output-section {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.dark-mode .container { background: #222; color: white; }
+.dark-mode input, .dark-mode textarea { background: #333; color: white; }
+.dark-mode .output-section { background: #333; }    
